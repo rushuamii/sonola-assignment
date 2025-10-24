@@ -4,33 +4,39 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: 'class', // Enable class-based dark mode
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        // Light mode colors
-        light: {
-          bg: '#FFFFFF',
-          surface: '#F9FAFB',
-          primary: '#4F46E5',
-          secondary: '#6B7280',
-          text: '#111827',
+        primary: {
+          light: '#6366F1',
+          dark: '#818CF8',
         },
-        // Dark mode colors
-        dark: {
-          bg: '#0F1117',
-          surface: '#1A1D29',
-          primary: '#6366F1',
-          secondary: '#9CA3AF',
-          text: '#F9FAFB',
+        background: {
+          light: '#FFFFFF',
+          dark: '#0A0B0F',
+        },
+        surface: {
+          light: '#F9FAFB',
+          dark: '#13151D',
+        },
+        card: {
+          light: '#FFFFFF',
+          dark: '#1A1D29',
+        },
+        text: {
+          primary: {
+            light: '#111827',
+            dark: '#F9FAFB',
+          },
+          secondary: {
+            light: '#6B7280',
+            dark: '#9CA3AF',
+          },
         },
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-      },
-      boxShadow: {
-        'card-light': '0 1px 3px 0 rgb(0 0 0 / 0.1)',
-        'card-dark': '0 1px 3px 0 rgb(0 0 0 / 0.4)',
+        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
       },
     },
   },
